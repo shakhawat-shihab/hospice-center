@@ -1,0 +1,28 @@
+.bg-nav{
+    background-color: #FEFED2;
+}
+.bg-trans{
+    background-color: transparent;
+}
+.link-style{
+    margin: 0 0.7rem;
+    padding: 0.5rem 0.7rem !important;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #0dcaf0 ;
+    color: rgba(0, 0, 0, 0.801) !important;
+    letter-spacing: 0.05rem;
+}
+.selected{
+    background-color: #78d9ecee;
+    color: #f22613 !important;
+}
+.nav-link:hover{
+    background-color: #96dbe94d;
+}
+
+@media screen and (max-width:767px) {
+    .link-style{
+        margin-top: 8px;
+    }
+}

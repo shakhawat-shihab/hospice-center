@@ -1,0 +1,38 @@
+.banner-pos{
+    height: 500px;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+.button-design{
+    width: 150px;
+    background-color: #0dcaf0 !important;
+    font-weight: 600 !important;
+    color: black;
+    letter-spacing: 0.055rem;
+}
+.button-design:hover{
+    background-color: #47d5f1f3 !important;
+    color: #f22613 !important;
+    transform:scale(1.06);
+    box-shadow: 5px 5px 15px grey;
+    transition:transform ease-in 0.5s, box-shadow ease-in 0.5s;
+}
+.heading{
+    color: hsla(0,0%,100%,.699);
+    font-weight: 700;
+}
+.txt{
+    margin: 20px 0px;
+    color: hsla(0,0%,100%,.699);
+    font-weight: 600;
+}
+@media screen and (max-width:600px) {
+    .banner-pos{
+        height: 400px;
+    }
+}
+@media screen and (max-width:400px) {
+    .banner-pos{
+        height: 450px;
+    }
+}
