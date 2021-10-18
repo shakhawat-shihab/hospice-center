@@ -14,9 +14,7 @@ const LogIn = () => {
                 </div>
                 <hr />
                 <p className='text-secondary text-center' > OR </p>
-                <button className='w-100 my-3 btn btn-outline-info fw-bold '
-
-                >
+                <button className='w-100 my-3 btn btn-outline-info fw-bold ' >
                     <span className=' me-2'>
                         <FcGoogle className='fs-3' />
                     </span>

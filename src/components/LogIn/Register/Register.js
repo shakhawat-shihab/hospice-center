@@ -8,7 +8,7 @@ const Register = () => {
             <div className='p-sm-5 px-3 py-4 bg-white rounded shadow mx-auto container-of-form' >
                 <RegisterForm />
                 <div className='text-center my-2'>
-                    <Link to='/register' className=' text-center'>Already have an Account?</Link>
+                    <Link to='/login' className=' text-center'>Already have an Account?</Link>
                 </div>
             </div>
         </div>

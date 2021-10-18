@@ -16,6 +16,9 @@
     /* color: white !important; */
     letter-spacing: 0.05rem;
 }
+.special-link-style{
+    padding: 0.1rem 0.4rem !important;
+}
 .selected{
     background-color: #78d9ecee;
     color: #f22613 !important;

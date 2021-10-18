@@ -23,7 +23,7 @@ const LogInForm = () => {
             <Form.Group className="my-3 " controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Keep Me logged in" />
             </Form.Group>
-            <button className='w-100 my-3 btn log-in-button-design '>
+            <button className='w-100 my-3 btn btn-outline-info fw-bold '>
                 Log In
             </button>
         </div>
