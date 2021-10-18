@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "service": "Covid Test",
+        "service": "Covid-19 Test",
         "cost": 400,
         "type": "test",
         "image": "https://i.ibb.co/dk7RcrG/Red-Virus-and-blue-DNA-strand-medical-3-D-illustration-with-dark-blue-background.jpg"
     },
     {
         "id": 2,
-        "service": "ETT ",
+        "service": "ETT (Exercise Tolerance Test) ",
         "cost": 2400,
         "type": "test",
-        "image": "https://i.ibb.co/fF2V12B/ett.jpg"
+        "image": "https://i.ibb.co/nPPsLvF/ett.jpg"
     },
     {
         "id": 3,
@@ -22,7 +22,7 @@
     },
     {
         "id": 4,
-        "service": "Insulin ",
+        "service": "Insulin Level Test ",
         "cost": 1000,
         "type": "test",
         "image": "https://i.ibb.co/qNB4zq3/3d-rendering-of-insulin-vials-and-syringe-isolated-over-white-background.jpg"
@@ -50,7 +50,7 @@
     },
     {
         "id": 8,
-        "service": "ECG  ",
+        "service": "ECG (Electrocardiogram) ",
         "cost": 400,
         "type": "test",
         "image": "https://i.ibb.co/zrM3gCS/Anatomy-of-human-heart-on-ecg-medical-background-3d-render.jpg"
@@ -80,21 +80,21 @@
         "id": 12,
         "service": "ICU with Ventilator Charge (Per day) ",
         "cost": 8000,
-        "type": "opertion",
+        "type": "operation",
         "image": "https://i.ibb.co/GkLxLL4/Modern-empty-temporary-intensive-care-emergency-room-is-ready-to-receive-patients-with-coronavirus-i.jpg"
     },
     {
         "id": 13,
         "service": "Single Valve Replacement ",
         "cost": 145000,
-        "type": "opertion",
+        "type": "operation",
         "image": "https://i.ibb.co/BKDDt4v/A-chest-x-ray-film-of-a-female-patient-with-cardiomegaly-pulmonary-edema-and-cardiac-valve-replaceme.jpg"
     },
     {
         "id": 14,
         "service": "CMC/PDA (Closed Heart Surgery) ",
         "cost": 60000,
-        "type": "opertion",
+        "type": "operation",
         "image": "https://i.ibb.co/Tb08y7w/We-work-with-a-valve-Valve-Replacement-Heart-surgery.jpg"
     },
     {
@@ -108,14 +108,14 @@
         "id": 16,
         "service": "VSD ",
         "cost": 15000,
-        "type": "opertion",
+        "type": "operation",
         "image": "https://i.ibb.co/GHWqhjB/vsd.jpg"
     },
     {
         "id": 17,
         "service": "TOF",
         "cost": 160000,
-        "type": "opertion",
+        "type": "operation",
         "image": "https://i.ibb.co/wYczvRK/tof.jpg"
     }
 ]

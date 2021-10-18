@@ -1,10 +1,12 @@
 .banner-pos{
-    height: 500px;
+    height: 100vh;
+    min-height: 500px;
     background-position: 50%;
     background-size: 100% 100%;
 }
 .button-design{
     width: 150px;
+    padding: 0.5rem 0.9rem !important;
     background-color: #0dcaf0 !important;
     font-weight: 600 !important;
     color: black;
@@ -28,11 +30,13 @@
 }
 @media screen and (max-width:600px) {
     .banner-pos{
-        height: 400px;
+        height: 100vh;
+        min-height: 400px;
     }
 }
 @media screen and (max-width:400px) {
     .banner-pos{
-        height: 450px;
+        height: 100vh;
+        min-height: 450px;
     }
 }

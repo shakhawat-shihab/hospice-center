@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import logo_name from '../../logo_name.png';
 import './NavigationBar.css';
 const NavigationBar = () => {
     const [changeHeader, setChangeHeader] = useState(false);
+    let { pathname } = useLocation();
+    if (pathname === '/') {
+        pathname = '/home';
+    }
+    //console.log('location.pathname :', pathname);
     const onChangeHeader = () => {
         // console.log('y =', window.scrollY)
         if (window.scrollY >= 75) {
@@ -19,7 +24,7 @@ const NavigationBar = () => {
     return (
         <div >
             <Navbar collapseOnSelect expand="md" variant="light" fixed='top'
-                className={'px-3 px-md-5 ' + (changeHeader ? 'bg-nav ' : 'bg-trans ')}
+                className={'px-3 px-md-5 py-3 ' + (pathname !== '/home' ? 'bg-nav ' : (changeHeader ? 'bg-nav ' : 'bg-trans '))}
             >
                 {/* <Container> */}
                 <Navbar.Brand as={NavLink} to='/home'>

@@ -1,0 +1,20 @@
+.not-found{
+    height: 100vh;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+.header-404{
+    font-size: 3.2rem;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+}
+.header-not-found{
+    font-size: 2.rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
