@@ -13,7 +13,7 @@ const ServiceCard = (props) => {
         <Col>
             <Card className='h-100'>
                 <div className='text-center'  >
-                    <img src={image} width='100%' height='200px' className='rounded' alt={service} />
+                    <img src={image} width='100%' height='200px' className='' alt={service} />
                 </div>
                 <Card.Body>
                     <Card.Title className='fs-4'>{service}</Card.Title>

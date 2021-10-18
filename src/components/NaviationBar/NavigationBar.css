@@ -1,5 +1,6 @@
 .bg-nav{
-    background-color: #F8CBCE;
+    /* background-color: #F8CBCE; */
+    background-color: #abb7b7;
     box-shadow: 1px 3px 15px #b6ecf775;
 }
 .bg-trans{
@@ -26,5 +27,9 @@
 @media screen and (max-width:767px) {
     .link-style{
         margin-top: 8px;
+    }
+    .bg-trans{
+        background-color: #abb7b7;
+        box-shadow: 1px 3px 15px #b6ecf775;
     }
 }

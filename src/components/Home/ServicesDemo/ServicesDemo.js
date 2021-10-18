@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Nav, Row } from 'react-bootstrap';
+import { ServiceContext } from '../../../context/ServiceProvider';
 import ServiceCard from '../../ServiceCard/ServiceCard';
 
 const ServicesDemo = () => {
-    const [services, setServices] = useState([]);
+    // const [services, setServices] = useState([]);
+    const { services } = useContext(ServiceContext);
     const [nav, setNav] = useState({ test: true, ambulance: false, operation: false });
-    useEffect(() => {
-        fetch('./services.json')
-            .then(resp => resp.json())
-            .then(json => setServices(json))
-    }, []);
+    // useEffect(() => {
+    //     fetch('./services.json')
+    //         .then(resp => resp.json())
+    //         .then(json => setServices(json))
+    // }, []);
     const test = services.filter(x => x.type === 'test');
     const ambulance = services.filter(x => x.type === 'ambulance');
     const operation = services.filter(x => x.type === 'operation');
-    console.log(services);
+    // console.log(services);
     const handleSelect = (eventKey) => {
         // console.log(eventKey);
         if (eventKey === '1') {
@@ -48,7 +50,7 @@ const ServicesDemo = () => {
             </Nav>
             <Row xs={1} sm={2} md={3} lg={4} className="g-2 g-lg-3 mx-0 my-3">
                 {
-                    nav.test && (test.map(x => <ServiceCard key={x.id} data={x}></ServiceCard>))
+                    nav.test && (test.slice(0, 8).map(x => <ServiceCard key={x.id} data={x}></ServiceCard>))
                 }
                 {
                     nav.ambulance && (ambulance.map(x => <ServiceCard key={x.id} data={x}></ServiceCard>))
