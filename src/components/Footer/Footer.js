@@ -4,7 +4,7 @@ import map from '../../../src/map.PNG'
 const Footer = () => {
     return (
         <div >
-            <div class='row m-0 py-5 px-2 px-sm-3 justify-content-between align-items-center bg-footer'>
+            <div className='row m-0 py-5 px-2 px-sm-3 justify-content-between align-items-center bg-footer'>
                 <div className='col-md-4 col-sm-4 text-center'>
                     <h3>Location</h3>
                     <div >
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class='bg-dark m-0 py-3'>
+            <div className='bg-dark m-0 py-3'>
                 <h5 className='text-center' style={{ color: '#abb7b7' }}> © 2021 - All Rights Reserved  @ Shakhawat Shihab</h5>
             </div>
         </div>
