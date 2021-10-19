@@ -4,7 +4,7 @@ import map from '../../../src/map.PNG'
 const Footer = () => {
     return (
         <div >
-            <div className='row m-0 py-5 px-2 px-sm-3 justify-content-between align-items-center bg-footer'>
+            <div className='row m-0 pt-3 pb-4 px-2 px-sm-3 justify-content-between align-items-center bg-footer'>
                 <div className='col-md-4 col-sm-4 text-center'>
                     <h3>Location</h3>
                     <div >

@@ -42,7 +42,7 @@ const NavigationBar = () => {
                         <Nav.Link as={NavHashLink} to='/home#top' activeClassName="selected"  >
                             Home
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to='/services' activeClassName="selected"  >
+                        <Nav.Link as={NavHashLink} to='/services' activeClassName="selected"  >
                             Services
                         </Nav.Link>
                         {/* <Nav.Link as={NavLink} to='/doctors' activeClassName="selected"  >

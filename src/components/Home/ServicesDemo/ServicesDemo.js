@@ -1,21 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Nav, Row } from 'react-bootstrap';
-import { ServiceContext } from '../../../context/ServiceProvider';
+import useService from '../../../Hooks/useService';
 import ServiceCard from '../../ServiceCard/ServiceCard';
 
 const ServicesDemo = () => {
-    // const [services, setServices] = useState([]);
-    const { services } = useContext(ServiceContext);
+    const { services } = useService([]);
     const [nav, setNav] = useState({ test: true, ambulance: false, operation: false });
-    // useEffect(() => {
-    //     fetch('./services.json')
-    //         .then(resp => resp.json())
-    //         .then(json => setServices(json))
-    // }, []);
     const test = services.filter(x => x.type === 'test');
     const ambulance = services.filter(x => x.type === 'ambulance');
     const operation = services.filter(x => x.type === 'operation');
-    // console.log(services);
     const handleSelect = (eventKey) => {
         // console.log(eventKey);
         if (eventKey === '1') {
@@ -58,9 +51,7 @@ const ServicesDemo = () => {
                 {
                     nav.operation && (operation.map(x => <ServiceCard key={x.id} data={x}></ServiceCard>))
                 }
-
             </Row>
-
         </div>
     );
 };

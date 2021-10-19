@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Row } from 'react-bootstrap';
-import { ServiceContext } from '../../context/ServiceProvider';
+import useService from '../../Hooks/useService';
 import ServiceCard from '../ServiceCard/ServiceCard';
 
 const Services = () => {
-    const { services } = useContext(ServiceContext);
+    const { services } = useService();
     return (
         <div className='mt-5 pt-5'>
             <div className=''>
