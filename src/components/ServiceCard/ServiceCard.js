@@ -5,7 +5,7 @@ import { ImInfo } from "react-icons/im";
 import { useHistory } from 'react-router';
 const ServiceCard = (props) => {
     const history = useHistory();
-    const { id, service, cost, type, image } = props.data;
+    const { id, service, cost, type, image, description } = props.data;
     function handlePayment() {
         history.push(`/service/${id}`)
     }
@@ -21,11 +21,14 @@ const ServiceCard = (props) => {
                         <AiFillTags className='text-info' />
                         <span className='ps-2'> {type}</span>
                     </Card.Text>
-                    <Card.Text className=' fs-5 '>
-                        Cost :
-                        <span className='text-warning' > {cost} ৳</span>
+                    <Card.Text className=' fs-6 '>
+                        {description.slice(0, 110).concat(' ...')}
                     </Card.Text>
                 </Card.Body>
+                <Card.Text className=' fs-5 px-3'>
+                    Cost :
+                    <span className='text-warning ' > {cost} ৳</span>
+                </Card.Text>
                 <div className='text-center'>
                     <button className='btn btn-primary mt-2 mb-3' onClick={handlePayment}  >
                         <ImInfo className=' fs-5' />

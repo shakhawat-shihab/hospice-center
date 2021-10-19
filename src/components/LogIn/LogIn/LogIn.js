@@ -8,7 +8,7 @@ import { useHistory, useLocation } from 'react-router';
 import { Spinner } from 'react-bootstrap';
 const LogIn = () => {
     window.scrollTo(0, 0);
-    const { user, signInUsingGoogle, isLoading, setIsLoading } = useAuth();
+    const { user, setUser, setError, signInUsingGoogle, isLoading, setIsLoading, signInUser } = useAuth();
     const location = useLocation();
     const history = useHistory();
     if (user.displayName || user.email) {
@@ -16,7 +16,7 @@ const LogIn = () => {
     }
     // PrivateRouter er ‘location.state.from’ te kon directory teke astase seta thake
     const redirect_uri = location.state?.from || '/home';
-    console.log('came from :', redirect_uri);
+    // console.log('came from :', redirect_uri);
     function handleSignInUsingGoogle() {
         signInUsingGoogle()
             .then(result => {
@@ -26,6 +26,30 @@ const LogIn = () => {
             .finally(() => {
                 setIsLoading(false);
             })
+    }
+    function handleLogIn(email, password) {
+        console.log('email :', email, 'password ', password);
+        signInUser(email, password)
+            .then(res => {
+                // console.log('success');
+                setUser(res.user);
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+        // .then(res => {
+        //     console.log('INSIDE');
+        //     setUser(res.user);
+        //     history.push(redirect_uri);
+        // })
+        // .catch(error => {
+        //     //setError(error.message);
+        // })
+        // .finally(() => {
+        //     setIsLoading(false);
+        //     console.log('INSIDE fINALLY');
+        // })
     }
     if (isLoading) {
         return (
@@ -38,7 +62,7 @@ const LogIn = () => {
         return (
             <div className='mt-5 pt-5 mb-4'>
                 <div className='p-sm-5 px-3 py-4 bg-white rounded shadow mx-auto container-of-form' >
-                    <LogInForm></LogInForm>
+                    <LogInForm clickHandler={handleLogIn} ></LogInForm>
                     <div className='text-center my-2'>
                         <Link to='/register' className=' text-center'>Need an account?</Link>
                     </div>

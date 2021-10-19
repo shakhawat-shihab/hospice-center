@@ -9,7 +9,8 @@ import useAuth from '../../Hooks/useAuth';
 import { GrEdit, GrPerformance } from "react-icons/gr";
 import { GoSignOut } from "react-icons/go";
 const NavigationBar = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, isLoading } = useAuth();
+
     // console.log(user);
     const [changeHeader, setChangeHeader] = useState(false);
     let { pathname } = useLocation();
@@ -56,13 +57,30 @@ const NavigationBar = () => {
                                 ?
                                 <NavDropdown title={
                                     <div className='h-100 d-flex align-items-center  '>
-                                        <img src={user.photoURL} alt="" width='55px' height='40px' className='rounded-circle ' />
+                                        {
+                                            user.photoURL
+                                                ?
+                                                <img src={user.photoURL} alt="" width='55px' height='40px' className='rounded-circle ' />
+                                                :
+                                                <img src={demoProfile} alt="" width='55px' height='40px' />
+
+                                        }
+
                                     </div>
                                 }
                                     id="collasible-nav-dropdown" >
                                     <NavDropdown.Item as={NavLink} to='/profile' activeClassName="selected" >
                                         <GrEdit />
-                                        <span className='ps-2'> {user.displayName.substr(0, user.displayName.indexOf(' '))} </span>
+                                        {
+                                            !isLoading &&
+                                            <span className='ps-2'>
+                                                {
+                                                    user.displayName ?
+                                                        user.displayName.substr(0, user?.displayName.indexOf(' ')) :
+                                                        user.displayName
+                                                }
+                                            </span>
+                                        }
                                     </NavDropdown.Item>
                                     <NavDropdown.Item as={NavLink} to='/settings' activeClassName="selected"  >
                                         <GrPerformance />

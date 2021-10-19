@@ -4,118 +4,135 @@
         "service": "Covid-19 Test",
         "cost": 400,
         "type": "test",
-        "image": "https://i.ibb.co/dk7RcrG/Red-Virus-and-blue-DNA-strand-medical-3-D-illustration-with-dark-blue-background.jpg"
+        "image": "https://i.ibb.co/dk7RcrG/Red-Virus-and-blue-DNA-strand-medical-3-D-illustration-with-dark-blue-background.jpg",
+        "description": "There are different types of tests-Diagnostic tests and antibody tests.Diagnostic tests can sho if you have an active COVID-19 infection and need to take steps to quarantine or isolate yourself from others Molecular and antigen tests are types of diagnostic tests than can detect if you have an active COVID-19 infection. Simples for diagnostic tests are typically collected with a nasal or throat swab, or saliva collected by spitting into a tube."
     },
     {
         "id": 2,
         "service": "ETT (Exercise Tolerance Test) ",
         "cost": 2400,
         "type": "test",
-        "image": "https://i.ibb.co/nPPsLvF/ett.jpg"
+        "image": "https://i.ibb.co/nPPsLvF/ett.jpg",
+        "description": "An exercise tolerance test (ETT) records the electrical activity of your heart whilst you exercise. It is most useful in patients who experience chest pain when they exert themselves. It is also used to detect whether heart rhythm abnormalities can be brought on by exercise. Nowadays it is common for scans of the heart to be done rather than an ETT."
     },
     {
         "id": 3,
         "service": "Chikungunya Antibodies IgM & IgG  ",
         "cost": 500,
         "type": "test",
-        "image": "https://i.ibb.co/YZZTc9X/Dangerous-Zika-Infected-Mosquito-Skin-Bite-Leishmaniasis-Encephalitis-Yellow-Fever-Dengue-Malaria-Di.jpg"
+        "image": "https://i.ibb.co/YZZTc9X/Dangerous-Zika-Infected-Mosquito-Skin-Bite-Leishmaniasis-Encephalitis-Yellow-Fever-Dengue-Malaria-Di.jpg",
+        "description": "IgM and IgG antibodies to ChikV are typically detectable 3 to 4 days and 6 to 7 days following onset of symptoms, respectively. IgM antibodies to ChikV typically remain detectable for 3 to 4 months after infection, whereas IgG antibodies to ChikV remain detectable for years."
     },
     {
         "id": 4,
         "service": "Insulin Level Test ",
         "cost": 1000,
         "type": "test",
-        "image": "https://i.ibb.co/qNB4zq3/3d-rendering-of-insulin-vials-and-syringe-isolated-over-white-background.jpg"
+        "image": "https://i.ibb.co/qNB4zq3/3d-rendering-of-insulin-vials-and-syringe-isolated-over-white-background.jpg",
+        "description": "This test measures the amount of insulin in your blood. Insulin is a hormone that helps move blood sugar, known as glucose, from your bloodstream into your cells. Glucose comes from the foods you eat and drink. It is your body&#39;s main source of energy.Insulin"
     },
     {
         "id": 5,
         "service": "Dengue IgM & IgG Antibodies  ",
         "cost": 500,
         "type": "test",
-        "image": "https://i.ibb.co/WWfMMW9/tiger-mosquito-on-skin-proboscis-inserted-and-feeding-belly-full-with-blood.jpg"
+        "image": "https://i.ibb.co/WWfMMW9/tiger-mosquito-on-skin-proboscis-inserted-and-feeding-belly-full-with-blood.jpg",
+        "description": "Positive IgM and IgG tests for dengue antibodies detected in an initial blood sample mean that it is likely that the person became infected with dengue virus within recent weeks. IgM antibody tests can be positive if a person has been infected with a similar virus, such as chikungunya (called cross-reaction)."
     },
     {
         "id": 6,
         "service": "HBs Ag",
         "cost": 750,
         "type": "test",
-        "image": "https://i.ibb.co/nQPBTRt/Blood-sample-for-hepatitis-B-surface-antigen-HBs-Ag-test.jpg"
+        "image": "https://i.ibb.co/nQPBTRt/Blood-sample-for-hepatitis-B-surface-antigen-HBs-Ag-test.jpg",
+        "description": "It is unclear whether a mother who is negative for hepatitis B virus surface antigen (HBsAg) but positive for hepatitis B virus (HBV) is at potential risk for mother-to-child transmission of HBV. This study, using a paired mother-teenager population, aimed to assess whether maternal HBsAg-negative HBV infection (hnHBI) is a significant source of child HBV infection (HBI)."
     },
     {
         "id": 7,
         "service": "HIV 1/2 (Screening)  ",
         "cost": 400,
         "type": "test",
-        "image": "https://i.ibb.co/nz49vjd/Holding-a-test-tube-with-blood-in-it-Handwritten-label-with-HIV-on-it-with-the-negative-tick-box-cro.jpg"
+        "image": "https://i.ibb.co/nz49vjd/Holding-a-test-tube-with-blood-in-it-Handwritten-label-with-HIV-on-it-with-the-negative-tick-box-cro.jpg",
+        "description": "It is unclear whether a mother who is negative for hepatitis B virus surface antigen (HBsAg) but positive for hepatitis B virus (HBV) is at potential risk for mother-to-child transmission of HBV. This study, using a paired mother-teenager population, aimed to assess whether maternal HBsAg-negative HBV infection (hnHBI) is a significant source of child HBV infection (HBI)."
     },
     {
         "id": 8,
         "service": "ECG (Electrocardiogram) ",
         "cost": 400,
         "type": "test",
-        "image": "https://i.ibb.co/zrM3gCS/Anatomy-of-human-heart-on-ecg-medical-background-3d-render.jpg"
+        "image": "https://i.ibb.co/zrM3gCS/Anatomy-of-human-heart-on-ecg-medical-background-3d-render.jpg",
+        "description": "It is unclear whether a mother who is negative for hepatitis B virus surface antigen (HBsAg) but positive for hepatitis B virus (HBV) is at potential risk for mother-to-child transmission of HBV. This study, using a paired mother-teenager population, aimed to assess whether maternal HBsAg-negative HBV infection (hnHBI) is a significant source of child HBV infection (HBI)."
     },
     {
         "id": 9,
         "service": "Ambulance Service In Dhaka South",
         "cost": 1400,
         "type": "ambulance",
-        "image": "https://i.ibb.co/1dp16Gs/Ambulance-van-on-highway-with-flashing-lights.jpg"
+        "image": "https://i.ibb.co/1dp16Gs/Ambulance-van-on-highway-with-flashing-lights.jpg",
+        "description": "Find Ambulence Service. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results &amp; Answers. Types: Best Results, Explore Now, New Sources, Best in Search."
     },
     {
         "id": 10,
         "service": "Ambulance Service In Dhaka North",
         "cost": 1200,
         "type": "ambulance",
-        "image": "https://i.ibb.co/B23S1Rv/Team-of-EMS-Paramedics-React-Quick-to-Bring-Injured-Patient-to-Healthcare-Hospital-and-Get-Him-Out-o.jpg"
+        "image": "https://i.ibb.co/B23S1Rv/Team-of-EMS-Paramedics-React-Quick-to-Bring-Injured-Patient-to-Healthcare-Hospital-and-Get-Him-Out-o.jpg",
+        "description": "Emergency medical services, also known as ambulance services or paramedic services, are emergency services that provide urgent pre-hospital treatment and stabilisation for serious illness and injuries and transport to definitive care."
     },
     {
         "id": 11,
         "service": "Ambulance Service up to 50km from Dhaka",
         "cost": 2800,
         "type": "ambulance",
-        "image": "https://i.ibb.co/JsL3VRC/Paramedics-taking-patient-on-stretcher-from-ambulance-to-hospital.jpg"
+        "image": "https://i.ibb.co/JsL3VRC/Paramedics-taking-patient-on-stretcher-from-ambulance-to-hospital.jpg",
+        "description": "Emergency medical services, also known as ambulance services or paramedic services, are emergency services that provide urgent pre-hospital treatment and stabilisation for serious illness and injuries and transport to definitive care."
     },
     {
         "id": 12,
         "service": "ICU with Ventilator Charge (Per day) ",
         "cost": 8000,
         "type": "operation",
-        "image": "https://i.ibb.co/GkLxLL4/Modern-empty-temporary-intensive-care-emergency-room-is-ready-to-receive-patients-with-coronavirus-i.jpg"
+        "image": "https://i.ibb.co/GkLxLL4/Modern-empty-temporary-intensive-care-emergency-room-is-ready-to-receive-patients-with-coronavirus-i.jpg",
+        "description": "Adjusting for patient and hospital characteristics, the mean incremental cost of mechanical ventilation in intensive care unit patients was 1,522 dollars per day (p &lt; . 001). Conclusions: Intensive care unit costs are highest during the first 2 days of admission, stabilizing at a lower level thereafter."
     },
     {
         "id": 13,
         "service": "Single Valve Replacement ",
         "cost": 145000,
         "type": "operation",
-        "image": "https://i.ibb.co/BKDDt4v/A-chest-x-ray-film-of-a-female-patient-with-cardiomegaly-pulmonary-edema-and-cardiac-valve-replaceme.jpg"
+        "image": "https://i.ibb.co/BKDDt4v/A-chest-x-ray-film-of-a-female-patient-with-cardiomegaly-pulmonary-edema-and-cardiac-valve-replaceme.jpg",
+        "description": "Heart valve surgery is a procedure to treat heart valve disease. Heart valve disease involves at least one of the four heart valves not working properly. Heart valves keep blood flowing in the correct direction through your heart.The four valves are the mitral valve, tricuspid valve, pulmonary valve and aortic valve."
     },
     {
         "id": 14,
         "service": "CMC/PDA (Closed Heart Surgery) ",
         "cost": 60000,
         "type": "operation",
-        "image": "https://i.ibb.co/Tb08y7w/We-work-with-a-valve-Valve-Replacement-Heart-surgery.jpg"
+        "image": "https://i.ibb.co/Tb08y7w/We-work-with-a-valve-Valve-Replacement-Heart-surgery.jpg",
+        "description": "Adjusting for patient and hospital characteristics, the mean incremental cost of mechanical ventilation in intensive care unit patients was 1,522 dollars per day (p &lt; . 001). Conclusions: Intensive care unit costs are highest during the first 2 days of admission, stabilizing at a lower level thereafter."
     },
     {
         "id": 15,
         "service": "Plain X-ray Abdomen ",
         "cost": 550,
         "type": "test",
-        "image": "https://i.ibb.co/S7MhxsM/xray.jpg"
+        "image": "https://i.ibb.co/S7MhxsM/xray.jpg",
+        "description": "Adjusting for patient and hospital characteristics, the mean incremental cost of mechanical ventilation in intensive care unit patients was 1,522 dollars per day (p &lt; . 001). Conclusions: Intensive care unit costs are highest during the first 2 days of admission, stabilizing at a lower level thereafter."
     },
     {
         "id": 16,
         "service": "VSD ",
         "cost": 15000,
         "type": "operation",
-        "image": "https://i.ibb.co/GHWqhjB/vsd.jpg"
+        "image": "https://i.ibb.co/GHWqhjB/vsd.jpg",
+        "description": "12=Adjusting for patient and hospital characteristics, the mean incremental cost of mechanical ventilation in intensive care unit patients was 1,522 dollars per day (p &lt; . 001). Conclusions: Intensive care unit costs are highest during the first 2 days of admission, stabilizing at a lower level thereafter."
     },
     {
         "id": 17,
         "service": "TOF",
         "cost": 160000,
         "type": "operation",
-        "image": "https://i.ibb.co/wYczvRK/tof.jpg"
+        "image": "https://i.ibb.co/wYczvRK/tof.jpg",
+        "description": "12=Adjusting for patient and hospital characteristics, the mean incremental cost of mechanical ventilation in intensive care unit patients was 1,522 dollars per day (p &lt; . 001). Conclusions: Intensive care unit costs are highest during the first 2 days of admission, stabilizing at a lower level thereafter."
     }
 ]
