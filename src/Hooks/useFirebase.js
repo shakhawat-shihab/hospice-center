@@ -20,7 +20,6 @@ const useFirebase = () => {
         // })
     };
     const createUserByEmailPassword = (email, password, displayName) => {
-        setIsLoading(true);
         return createUserWithEmailAndPassword(auth, email, password)
         // .then(result => {
         //     const newUser = {
@@ -42,6 +41,9 @@ const useFirebase = () => {
                     button: "Ok",
                 });
             })
+            .finally(() => {
+                setIsLoading(false);
+            })
 
     };
     const signInUser = (email, password) => {
@@ -56,13 +58,16 @@ const useFirebase = () => {
         // })
     }
     const updateProfileName = (displayName) => {
+        setIsLoading(true);
         updateProfile(auth.currentUser, {
             displayName: displayName,
         }).then(() => {
             setIsLoading(false);
         }).catch((error) => {
             setError(error.message)
-        });
+        }).finally(() => {
+            setIsLoading(false);
+        })
     }
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
