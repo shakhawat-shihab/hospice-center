@@ -4,55 +4,63 @@
         "name": "Professor Brig. Abdul Malik ",
         "qualification": "MBBS, MRCP, FCCP, FCPS, FRCP, FACC",
         "post": "chairman",
-        "photo": "https://i.ibb.co/2c2TzKR/abdul-malik.jpg"
+        "photo": "https://i.ibb.co/2c2TzKR/abdul-malik.jpg",
+        "phone": "01841280343"
     },
     {
         "id": 1002,
         "name": "Prof. A.T.M. Khalilur Rahman ",
         "qualification": "MBBS, DA, DIP (Cardiac Anaesthesia). ",
         "post": "Head of Cardiac Anesthesiology",
-        "photo": "https://i.ibb.co/5BXbBJt/khalilur.jpg"
+        "photo": "https://i.ibb.co/5BXbBJt/khalilur.jpg",
+        "phone": "0172124399"
     },
     {
         "id": 1003,
         "name": "Prof. Dr. Farooque Ahmed  ",
         "qualification": "MBBS, MS (CTS) ",
         "post": " Chief Cardiac Surgeon ",
-        "photo": "https://i.ibb.co/ThNgDyf/farooque.jpg"
+        "photo": "https://i.ibb.co/ThNgDyf/farooque.jpg",
+        "phone": "01921212343"
     },
     {
         "id": 1004,
         "name": "Prof. Dr. Mohammad Badiuzzaman  ",
         "qualification": "MBBS, FCPS , MD , FACC, WHO Fellow-Cardiology",
         "post": " Professor of Cardiology ",
-        "photo": "https://i.ibb.co/stWTzX4/bodiuzzaman.jpg"
+        "photo": "https://i.ibb.co/stWTzX4/bodiuzzaman.jpg",
+        "phone": "01841280343"
     },
     {
         "id": 1005,
         "name": "Prof. Quamrul Islam ",
         "qualification": "MBBS, FCPS, MD, FCVS ",
         "post": " Senior Cardiac Surgeon  ",
-        "photo": "https://i.ibb.co/NY298Z8/quamrul.jpg"
+        "photo": "https://i.ibb.co/NY298Z8/quamrul.jpg",
+        "phone": "01921212343"
     },
     {
         "id": 1006,
         "name": "Prof. Abul Kalm Shamsuddin ",
         "qualification": "MBBS, MS (Cardiovascular and Thoracic Surgery) ",
         "post": " Senior Consultant of Pediatric Cardiac Surgeon  ",
-        "photo": "https://i.ibb.co/x7g2vgh/abul-kalam.jpg"
+        "photo": "https://i.ibb.co/x7g2vgh/abul-kalam.jpg",
+        "phone": "01841280343"
     },
     {
         "id": 1007,
         "name": "Prof. Mir Nesaruddin Ahmed ",
         "qualification": "MBBS, DTCD (DU), MD (Cardiology),FCCP, FACC ",
         "post": " Professor & Senior Consultant Cardiologist ",
-        "photo": "https://i.ibb.co/Xzjvy17/nesauddin.jpg"
+        "photo": "https://i.ibb.co/Xzjvy17/nesauddin.jpg",
+        "phone": "01921212343"
     },
     {
         "id": 1008,
         "name": "Dr. Liaquat Jahan",
         "qualification": "MBBS, DTCD (DU), MD (Cardiology) ",
         "post": " Senior Consultant Cardiac Anesthesiologist ",
-        "photo": "https://i.ibb.co/5G1jfn6/liaquat.jpg"
+        "photo": "https://i.ibb.co/5G1jfn6/liaquat.jpg",
+        "phone": "01841280343"
     }
 ]

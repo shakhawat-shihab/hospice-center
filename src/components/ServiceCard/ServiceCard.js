@@ -6,8 +6,8 @@ import { useHistory } from 'react-router';
 const ServiceCard = (props) => {
     const history = useHistory();
     const { id, service, cost, type, image, description } = props.data;
-    function handlePayment() {
-        history.push(`/service/${id}`)
+    function handleClick() {
+        history.push(`/service/${id}`);
     }
     return (
         <Col>
@@ -30,7 +30,7 @@ const ServiceCard = (props) => {
                     <span className='text-warning ' > {cost} ৳</span>
                 </Card.Text>
                 <div className='text-center'>
-                    <button className='btn btn-primary mt-2 mb-3' onClick={handlePayment}  >
+                    <button className='btn btn-primary mt-2 mb-3' onClick={handleClick}  >
                         <ImInfo className=' fs-5' />
                         <span className='ps-2'>View Details</span>
                     </button>

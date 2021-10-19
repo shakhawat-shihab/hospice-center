@@ -1,0 +1,27 @@
+[
+    {
+        "id": "cus1",
+        "name": "Allina Rahman",
+        "review": "I took service from them, the dcotors are so helpful. Their Accomudation facility is also excellent."
+    },
+    {
+        "id": "cus2",
+        "name": "Akib Ahsan",
+        "review": "The Lab facility is excellent, I receive my test report within som hourse only."
+    },
+    {
+        "id": "cus3",
+        "name": "Mukit Ali",
+        "review": "The things I liked the most is the discount for the poor people. This is two much appreciatbale "
+    },
+    {
+        "id": "cus4",
+        "name": "Shakil Khan",
+        "review": "I became a memeber of their organisation. I donate for them and this donation is used for poor peoplr's treatment."
+    },
+    {
+        "id": "cus5",
+        "name": "Israt Jahan",
+        "review": "The Nurse and their service is too good. I admitted their for aome days and they threated me like a family memeber"
+    }
+]

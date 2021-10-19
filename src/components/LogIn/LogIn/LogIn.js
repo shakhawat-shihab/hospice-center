@@ -6,6 +6,7 @@ import './LogIn.css'
 import useAuth from '../../../Hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
 import { Spinner } from 'react-bootstrap';
+import swal from 'sweetalert';
 const LogIn = () => {
     window.scrollTo(0, 0);
     const { user, setUser, setError, signInUsingGoogle, isLoading, setIsLoading, signInUser } = useAuth();
@@ -23,12 +24,22 @@ const LogIn = () => {
                 //setUser(result.user);
                 history.push(redirect_uri);
             })
+            .catch(error => {
+                setError(error.message);
+                console.log(error.message);
+                swal({
+                    title: error.message,
+                    icon: "error",
+                    buttons: true,
+                    dangerMode: true,
+                })
+            })
             .finally(() => {
                 setIsLoading(false);
             })
     }
     function handleLogIn(email, password) {
-        console.log('email :', email, 'password ', password);
+        // console.log('email :', email, 'password ', password);
         signInUser(email, password)
             .then(res => {
                 // console.log('success');
@@ -37,7 +48,19 @@ const LogIn = () => {
             })
             .catch(error => {
                 setError(error.message);
+                console.log(error.message);
+                swal({
+                    title: "Please Check Your Email or Password",
+                    text: error.message,
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
             })
+            .finally(() => {
+                setIsLoading(false);
+            })
+
         // .then(res => {
         //     console.log('INSIDE');
         //     setUser(res.user);

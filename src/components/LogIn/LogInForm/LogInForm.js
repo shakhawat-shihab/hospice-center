@@ -3,6 +3,7 @@ import { Form, InputGroup } from 'react-bootstrap';
 import { BiShow, BiHide } from "react-icons/bi";
 import './LogInForm.css';
 const LogInForm = (props) => {
+    window.scrollTo(0, 0);
     const [visible, setVisible] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

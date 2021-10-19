@@ -55,24 +55,23 @@ const NavigationBar = () => {
                         {
                             (user.displayName || user.email)
                                 ?
-                                <NavDropdown title={
-                                    <div className='h-100 d-flex align-items-center  '>
-                                        {
-                                            user.photoURL
-                                                ?
-                                                <img src={user.photoURL} alt="" width='55px' height='40px' className='rounded-circle ' />
-                                                :
-                                                <img src={demoProfile} alt="" width='55px' height='40px' />
-
-                                        }
-
-                                    </div>
-                                }
+                                <NavDropdown
+                                    title={
+                                        <div className='h-100 d-flex align-items-center  '>
+                                            {
+                                                user.photoURL
+                                                    ?
+                                                    <img src={user.photoURL} alt="" width='55px' height='40px' className='rounded-circle ' />
+                                                    :
+                                                    <img src={demoProfile} alt="" width='55px' height='40px' />
+                                            }
+                                        </div>
+                                    }
                                     id="collasible-nav-dropdown" >
                                     <NavDropdown.Item as={NavLink} to='/profile' activeClassName="selected" >
                                         <GrEdit />
                                         {
-                                            !isLoading &&
+                                            // !isLoading &&
                                             <span className='ps-2'>
                                                 {
                                                     user.displayName ?

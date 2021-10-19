@@ -1,8 +1,13 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const DoctorsCard = (props) => {
     const { id, name, photo, post } = props.data;
+    const history = useHistory();
+    function handleClick() {
+        history.push(`/doctor/${id}`);
+    }
     return (
         <Col>
             <Card className='h-100'>
@@ -17,7 +22,7 @@ const DoctorsCard = (props) => {
                     </Card.Text>
                 </Card.Body>
                 <div className='text-center'>
-                    <button className='btn btn-primary mt-2 mb-3'   >
+                    <button className='btn btn-primary mt-2 mb-3' onClick={handleClick}  >
                         <span className='ps-2'>Contact</span>
                     </button>
                 </div>

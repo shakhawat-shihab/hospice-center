@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { } from 'react';
 import { Row } from 'react-bootstrap';
+import useDoctor from '../../../Hooks/useDoctor';
 import DoctorsCard from '../../DoctorsCard/DoctorsCard';
 
 const DoctorsDemo = () => {
-    const [doctors, setDoctors] = useState([]);
-    useEffect(() => {
-        fetch('./doctors.json')
-            .then(resp => resp.json())
-            .then(json => setDoctors(json))
-    }, [])
+    const { doctors } = useDoctor();
     return (
         <div className='my-5'>
             <h1 className='text-center fw-bold'>Our Doctors</h1>

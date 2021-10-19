@@ -1,6 +1,7 @@
 import InitializeFirebase from "../firebase/firebase.init";
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from 'firebase/auth';
 import { useEffect, useState } from "react";
+import swal from 'sweetalert';
 InitializeFirebase();
 const useFirebase = () => {
     const [user, setUser] = useState({});
@@ -35,7 +36,13 @@ const useFirebase = () => {
         signOut(auth)
             .then(() => {
                 setUser({});
+                swal({
+                    title: "You are Successfully Logged Out!",
+                    icon: "success",
+                    button: "Ok",
+                });
             })
+
     };
     const signInUser = (email, password) => {
         setIsLoading(true);
@@ -70,6 +77,6 @@ const useFirebase = () => {
         return () => unsubscribed;
     }, [])
 
-    return { signInUsingGoogle, user, setUser, error, logOut, isLoading, setIsLoading, createUserByEmailPassword, signInUser, updateProfileName }
+    return { signInUsingGoogle, user, setUser, error, setError, logOut, isLoading, setIsLoading, createUserByEmailPassword, signInUser, updateProfileName }
 }
 export default useFirebase;
