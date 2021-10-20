@@ -94,6 +94,8 @@ const RegisterForm = () => {
         // Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:
         const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
         re.test(e.target.value) ? setPasswordValidity(1) : setPasswordValidity(-1);
+        //password change means 
+        setPasswordValidity1(-1);
     }
     function testMatchPassswordValidity(e) {
         const rePass = document.getElementById('pass').value;
