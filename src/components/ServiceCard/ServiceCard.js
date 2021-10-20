@@ -3,6 +3,7 @@ import { Card, Col } from 'react-bootstrap';
 import { AiFillTags } from "react-icons/ai";
 import { ImInfo } from "react-icons/im";
 import { useHistory } from 'react-router';
+import './ServiceCard.css';
 const ServiceCard = (props) => {
     const history = useHistory();
     const { id, service, cost, type, image, description } = props.data;
@@ -11,9 +12,9 @@ const ServiceCard = (props) => {
     }
     return (
         <Col>
-            <Card className='h-100'>
+            <Card className='h-100 service '>
                 <div className='text-center'  >
-                    <img src={image} width='100%' height='200px' className='' alt={service} />
+                    <img src={image} width='100%' height='200px' className=' service-img ' alt={service} />
                 </div>
                 <Card.Body>
                     <Card.Title className='fs-4'>{service}</Card.Title>
@@ -31,7 +32,7 @@ const ServiceCard = (props) => {
                 </Card.Text>
                 <div className='text-center'>
                     <button className='btn btn-primary mt-2 mb-3' onClick={handleClick}  >
-                        <ImInfo className=' fs-5' />
+                        <ImInfo className=' text-warning fs-5' />
                         <span className='ps-2'>View Details</span>
                     </button>
                 </div>

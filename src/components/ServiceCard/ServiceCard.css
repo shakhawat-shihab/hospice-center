@@ -1,0 +1,14 @@
+.service{
+    box-shadow: 1px 1px 12px rgb(238, 238, 238);
+    border:0px !important;
+    border-radius: 5px !important;
+}
+.service:hover{
+    transform: skewY(1deg);
+    box-shadow: 1px 5px 12px lightgray;
+    /* transition: box-shadow ease-in-out 0.6s; */
+    transition: transform ease-in-out 0.7s, box-shadow ease-in-out 0.4s ;
+}
+.service-img{
+    border-radius: 5px ;
+}

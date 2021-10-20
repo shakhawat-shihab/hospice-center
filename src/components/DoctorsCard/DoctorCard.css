@@ -1,0 +1,12 @@
+.bg-doctor{
+    background-color: rgba(240, 238, 238, 0.459);
+    border-radius: 8px;
+}
+.bg-doctor:hover .img-doctor{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.6s;
+}
+.bg-doctor:hover{
+    box-shadow: 1px 1px 15px lightgray;
+    transition: box-shadow ease-in-out 0.6s;
+}

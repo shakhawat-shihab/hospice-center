@@ -17,12 +17,12 @@ const ServiceDetail = () => {
                 <div className='row m-0 px-3 my-5 align-items-center justify-content-between'>
                     <div className='col-md-7 col-5 '>
                         <h4 className='text-center '>Service Name: {target?.service}</h4>
+                        <p><span className='fw-bold'>Description: </span> {target?.description} </p>
                         <h6>
                             <AiFillTags className='text-info' />
-                            <span className='ps-2'> {target?.type}</span>
+                            <span className='ps-2 text-capitalize'> {target?.type}</span>
                         </h6>
-                        <p>Description: {target?.description} </p>
-                        <h5>Cost: {target?.cost}</h5>
+                        <h5 className='py-2'>Cost: {target?.cost}</h5>
                     </div>
                     <div className='col-md-4 col-5'>
                         <div className='text-center'  >

@@ -5,6 +5,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import logo_name from '../../logo_name.png';
 import './NavigationBar.css';
 import demoProfile from '../../profile.png';
+import logInIcon from '../../login.png';
 import useAuth from '../../Hooks/useAuth';
 import { GrEdit, GrPerformance } from "react-icons/gr";
 import { GoSignOut } from "react-icons/go";
@@ -46,10 +47,10 @@ const NavigationBar = () => {
                         <Nav.Link as={NavHashLink} to='/services' activeClassName="selected"  >
                             Services
                         </Nav.Link>
-                        {/* <Nav.Link as={NavLink} to='/doctors' activeClassName="selected"  >
+                        <Nav.Link as={NavHashLink} to='/doctors' activeClassName="selected"  >
                             Doctors
-                        </Nav.Link> */}
-                        <Nav.Link as={NavHashLink} to='/home#contacts' activeClassName="selected"  >
+                        </Nav.Link>
+                        <Nav.Link as={NavHashLink} to='#contacts' activeClassName="selected"  >
                             Contact
                         </Nav.Link>
                         {
@@ -95,7 +96,7 @@ const NavigationBar = () => {
                                 <Nav.Link as={NavLink} to='/login' activeClassName="selected" className='special-link-style ' >
                                     <OverlayTrigger placement='bottom-end' overlay={<Tooltip id="tooltip-disabled">Log In</Tooltip>}>
                                         <div className='h-100 d-flex align-items-center'>
-                                            <img src={demoProfile} alt="" width='55px' height='40px' />
+                                            <img src={logInIcon} alt="" width='55px' height='40px' />
                                         </div>
                                     </OverlayTrigger>
                                 </Nav.Link>

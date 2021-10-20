@@ -10,7 +10,7 @@ const DoctorsDemo = () => {
             <h1 className='text-center fw-bold'>Our Doctors</h1>
             <Row xs={2} sm={3} md={4} lg={5} className="g-2 g-lg-3 mx-0 my-3">
                 {
-                    doctors.slice(0, 8).map(x => <DoctorsCard key={x.id} data={x}></DoctorsCard>)
+                    doctors.slice(0, 5).map(x => <DoctorsCard key={x.id} data={x}></DoctorsCard>)
                 }
             </Row>
 

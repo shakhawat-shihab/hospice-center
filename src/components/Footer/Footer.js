@@ -6,14 +6,14 @@ const Footer = () => {
         <div >
             <div className='row g-5 m-0 pt-3 pb-4 px-2 px-sm-3 justify-content-around align-items-center bg-secondary'>
                 <div className='col-md-4 col-sm-4 text-center'>
-                    <h4 className='pb-2'>Location</h4>
+                    <h4 className='pb-2 text-white'>Location</h4>
                     <div >
                         <img src={map} alt="Google Map" width='70%' />
                     </div>
 
                 </div>
                 <div className='col-md-5 col-sm-5' id='contacts'>
-                    <h4>Address</h4>
+                    <h4 className='text-white'>Address</h4>
                     <div className='d-flex flex-column '>
                         <h5 className='my-2 fw-bold'>Hospice Center</h5>
                         <p className='mb-2'> <span className='fw-bold'>Address:</span>  Plot-7/2, Section-2, Mirpur, Dhaka-1216, Bangladesh</p>
