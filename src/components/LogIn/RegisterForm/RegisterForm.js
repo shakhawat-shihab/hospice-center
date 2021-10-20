@@ -13,17 +13,17 @@ const RegisterForm = () => {
     const [emailValidity, setEmailValidity] = useState(0);
     const [passwordValidity, setPasswordValidity] = useState(0);
     const [passwordValidity1, setPasswordValidity1] = useState(0);
+    const [agree, setAgree] = useState(false);
     const [visible, setVisible] = useState(false);
     const [visible1, setVisible1] = useState(false);
-    const [agree, setAgree] = useState(false);
     const history = useHistory();
     function handleCreateUserByEmailPassword() {
         //spcae is concatinated as we must need a single space to identify first name. 
         const name = document.getElementById('name').value.concat(" ");
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('pass').value;
-        // console.log(email, password, agree);
-        if (userValidity && emailValidity && passwordValidity && passwordValidity1 && agree) {
+        // console.log(email, password, agree, passwordValidity1);
+        if (userValidity === 1 && emailValidity === 1 && passwordValidity === 1 && passwordValidity1 === 1 && agree === true) {
             createUserByEmailPassword(email, password, name)
                 .then(result => {
                     const newUser = {
@@ -91,10 +91,11 @@ const RegisterForm = () => {
         re.test(String(e.target.value).toLowerCase()) ? setEmailValidity(1) : setEmailValidity(-1);
     }
     function testPassswordValidity(e) {
-        // Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:
-        const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+        //  Min 8 letter password, with at least a symbol, upper and lower case letters and a number
+        // const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+        var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
         re.test(e.target.value) ? setPasswordValidity(1) : setPasswordValidity(-1);
-        //password change means 
+        //password change means re enter is mismatched
         setPasswordValidity1(-1);
     }
     function testMatchPassswordValidity(e) {
@@ -122,7 +123,7 @@ const RegisterForm = () => {
     const popoverPassword = (
         <Popover id="popover-basic">
             <Popover.Body>
-                Minimum eight characters, at least one uppercase letter, one lowercase letter and one number.
+                Min. 8 letter password, with at least a symbol, upper and lower case letters and a number
             </Popover.Body>
         </Popover>
     );
