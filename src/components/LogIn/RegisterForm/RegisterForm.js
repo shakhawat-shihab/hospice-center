@@ -15,36 +15,70 @@ const RegisterForm = () => {
     const [passwordValidity1, setPasswordValidity1] = useState(0);
     const [visible, setVisible] = useState(false);
     const [visible1, setVisible1] = useState(false);
+    const [agree, setAgree] = useState(false);
     const history = useHistory();
     function handleCreateUserByEmailPassword() {
         //spcae is concatinated as we must need a single space to identify first name. 
         const name = document.getElementById('name').value.concat(" ");
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('pass').value;
-        // console.log(email, password);
-        createUserByEmailPassword(email, password, name)
-            .then(result => {
-                const newUser = {
-                    ...result.user,
-                    displayName: name
-                }
-                setUser(newUser);
-                updateProfileName(name);
-                history.push('/home');
-                swal({
-                    title: "Your Account Created Successfully!",
-                    icon: "success",
-                    button: "Ok",
-                });
-            })
-            .catch(e => {
-                swal({
-                    title: e.message,
-                    icon: "error",
-                    buttons: true,
-                    dangerMode: true,
+        // console.log(email, password, agree);
+        if (userValidity && emailValidity && passwordValidity && passwordValidity1 && agree) {
+            createUserByEmailPassword(email, password, name)
+                .then(result => {
+                    const newUser = {
+                        ...result.user,
+                        displayName: name
+                    }
+                    setUser(newUser);
+                    updateProfileName(name);
+                    history.push('/home');
+                    swal({
+                        title: "Your Account Created Successfully!",
+                        icon: "success",
+                        button: "Ok",
+                    });
                 })
+                .catch(e => {
+                    swal({
+                        title: e.message,
+                        icon: "error",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                })
+        }
+        else {
+            swal({
+                title: "Fill all the column according to our rules and Agree our terms",
+                icon: "error",
+                buttons: true,
+                dangerMode: true,
             })
+        }
+        // createUserByEmailPassword(email, password, name)
+        //     .then(result => {
+        //         const newUser = {
+        //             ...result.user,
+        //             displayName: name
+        //         }
+        //         setUser(newUser);
+        //         updateProfileName(name);
+        //         history.push('/home');
+        //         swal({
+        //             title: "Your Account Created Successfully!",
+        //             icon: "success",
+        //             button: "Ok",
+        //         });
+        //     })
+        //     .catch(e => {
+        //         swal({
+        //             title: e.message,
+        //             icon: "error",
+        //             buttons: true,
+        //             dangerMode: true,
+        //         })
+        //     })
     }
     function handlePasswordVisibility(val) {
         val === 'first' ? setVisible(!visible) : setVisible1(!visible1);
@@ -65,6 +99,9 @@ const RegisterForm = () => {
         const rePass = document.getElementById('pass').value;
         // console.log('prvs', rePass);
         rePass === e.target.value ? setPasswordValidity1(1) : setPasswordValidity1(-1);
+    }
+    function testAgree(e) {
+        setAgree(!agree);
     }
     const popoverUserName = (
         <Popover id="popover-basic">
@@ -96,10 +133,6 @@ const RegisterForm = () => {
     );
     return (
         <div>
-            {/* <OverlayTrigger trigger="hover" placement="right" overlay={popover}>
-                <Button variant="success">Click me to see</Button>
-            </OverlayTrigger> */}
-            {/* username */}
             <InputGroup className="mb-2">
                 <Form.Control size="lg" id="name" placeholder="User name" onChange={testUserNameValidity} />
                 <OverlayTrigger trigger="hover" placement="bottom" overlay={popoverUserName}>
@@ -149,7 +182,7 @@ const RegisterForm = () => {
             </InputGroup>
             {/* register button */}
             <Form.Group className="my-3 " controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="I Agree to Terms & Cnditions" required />
+                <Form.Check type="checkbox" label="I Agree to Terms & Cnditions" required onClick={testAgree} />
             </Form.Group>
             <button className='w-100 my-3 btn btn-outline-info fw-bold' onClick={handleCreateUserByEmailPassword}>
                 Register
