@@ -4,7 +4,7 @@ Live-site: https://hospice-shs.web.app
 
 ## Description
 
-* This is the website of a Health Care Center
+* This is the website of a Health Care Center.
 * In this website, the services provided by the organization are listed.
 * A user can create account using his Gmail or Email & Password.
 * The Authentication system is implemented using Firebase Auth.

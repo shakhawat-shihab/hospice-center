@@ -9,7 +9,7 @@ import useAuth from '../../Hooks/useAuth';
 import { GrEdit, GrPerformance } from "react-icons/gr";
 import { GoSignOut } from "react-icons/go";
 const NavigationBar = () => {
-    const { user, logOut, isLoading } = useAuth();
+    const { user, logOut } = useAuth();
 
     // console.log(user);
     const [changeHeader, setChangeHeader] = useState(false);

@@ -21,8 +21,13 @@ const LogIn = () => {
     function handleSignInUsingGoogle() {
         signInUsingGoogle()
             .then(result => {
-                //setUser(result.user);
+                setUser(result.user);
                 history.push(redirect_uri);
+                swal({
+                    title: "You are Successfully Logged In!",
+                    icon: "success",
+                    button: "Ok",
+                });
             })
             .catch(error => {
                 setError(error.message);
@@ -45,6 +50,11 @@ const LogIn = () => {
                 // console.log('success');
                 setUser(res.user);
                 history.push(redirect_uri);
+                swal({
+                    title: "You are Successfully Logged In!",
+                    icon: "success",
+                    button: "Ok",
+                });
             })
             .catch(error => {
                 setError(error.message);
